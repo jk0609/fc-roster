@@ -21,7 +21,7 @@ Exercise in Angular and Firebase integration. The app is a roster manager for a 
 * Bootstrap
 * Javascript/Node.JS
 * Angular 2
-* Firebase
+* Firebase Config Key
 
 ### License
 

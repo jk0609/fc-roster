@@ -1,0 +1,8 @@
+<h2>All Players</h2>
+
+<div *ngFor="let player of players | async" (click)="goPlayerDetail(player)" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{player.name}}</em></h3>
+  </div>
+</div>
+<button (click)='addPlayer()'>Add Player</button>

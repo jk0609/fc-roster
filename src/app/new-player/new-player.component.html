@@ -1,0 +1,29 @@
+<h3>Add Player</h3>
+<div>
+  <div>
+    <label>Name</label>
+    <br>
+    <input #newName>
+  </div>
+  <div>
+    <label>Character Name</label>
+    <br>
+    <input #newCharacter>
+  </div>
+  <div>
+    <label>Rank</label>
+    <br>
+    <textarea #newRank></textarea>
+  </div>
+  <div>
+    <label>Role</label>
+    <br>
+    <textarea #newRole></textarea>
+  </div>
+  <div>
+    <label>ImageURL</label>
+    <br>
+    <textarea #newImage></textarea>
+  </div>
+  <button (click)="submitForm(newName.value, newCharacter.value, newRank.value, newRole.value, newImage.value); newName.value = '';newCharacter.value = '';newRank.value = '';newRole.value = '';newImage.value = '';">Add</button>
+</div>
