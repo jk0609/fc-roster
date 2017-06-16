@@ -10,10 +10,14 @@ Exercise in Angular and Firebase integration. The app is a roster manager for a 
 * Node.js with NPM
 * Angular 2
 
-## Setup/Installation Requirements
-1. Clone the directory to your local machine and navigate to project root directory.
-2. Open your Node.JS terminal and run $ npm install.
-3. Run $ ng serve to initiate the directory and take it live at localhost:4200.
+## Setup/Installation Requirement ##
+1. Clone the directory to your local machine.
+2. To use this app, you need a Firebase database.
+  * Go to https://firebase.google.com/ and use your Google account (or sign up for one) to create a Firebase account.
+  * Create a new project and click on 'Add Firebase to your web app'.
+  * Create a file named api-key.ts in the src/app folder. Type 'export var masterFirebaseConfig = {};' and copy your API config info from Firebase into the brackets.
+3. Open your Node.JS terminal and navigate to project root directory. Run $ npm install.
+4. Run $ ng serve to initiate the directory and take it live at localhost:4200. You will first need to navigate to 'Admin' in the footer and create players before you can use the other functions of the app. 
 
 ## Technologies Used
 
