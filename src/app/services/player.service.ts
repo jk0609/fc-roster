@@ -15,10 +15,27 @@ export class PlayerService {
   getPlayers(){
     return this.players;
   }
-  //get player by id
+
+  getPlayerByKey(key){
+    return this.database.object('players/' + key);
+  }
 
   addPlayer(player){
     this.players.push(player);
   }
 
+  updatePlayer(player){
+    var playerInFirebase = this.getPlayerByKey(player.$key);
+    playerInFirebase.update({
+      name: player.name,
+      character: player.character,
+      rank: player.rank,
+      role: player.role,
+      imageURL: player.imageURL
+    });
+  }
+
+  deletePlayer(player){
+    this.getPlayerByKey(player.$key).remove();
+  }
 }

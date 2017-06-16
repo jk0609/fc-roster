@@ -1,8 +1,15 @@
 <h2>All Players</h2>
 
-<div *ngFor="let player of players | async" (click)="goPlayerDetail(player)" class="panel panel-default">
+<div *ngFor="let player of players | async" class="panel panel-default">
   <div class="panel-body">
-    <h3><em>{{player.name}}</em></h3>
+    <img src="{{player.imageURL}}" class='logo' alt="">
+    <h3 (click)="goPlayerDetail(player)">{{player.name}}</h3>
+    <h5><em>Character: {{player.character}}</em></h5>
+    <h5>{{player.role}}</h5>
+    <div *ngIf="currentRoute === '/admin/new'">
+      {{player.rank}}
+      <hr>
+      <app-edit-player [selectedPlayer]='player'></app-edit-player>
+    </div>
   </div>
 </div>
-<button (click)='addPlayer()'>Add Player</button>

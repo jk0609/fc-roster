@@ -10,6 +10,9 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AppComponent } from './app.component';
 import { PlayerListComponent } from './player-list/player-list.component';
 import { NewPlayerComponent } from './new-player/new-player.component';
+import { PlayerDetailComponent } from './player-detail/player-detail.component';
+import { EditPlayerComponent } from './edit-player/edit-player.component';
+import { AboutComponent } from './about/about.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -22,7 +25,10 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     PlayerListComponent,
-    NewPlayerComponent
+    NewPlayerComponent,
+    PlayerDetailComponent,
+    EditPlayerComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

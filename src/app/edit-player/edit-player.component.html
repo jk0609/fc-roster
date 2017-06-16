@@ -1,0 +1,28 @@
+<h4>Edit Player</h4>
+
+<label>Name</label>
+<input [(ngModel)]="selectedPlayer.name">
+<br>
+<label>Character</label>
+<input [(ngModel)]="selectedPlayer.character">
+<br>
+<label>Rank</label>
+<select [(ngModel)]="selectedPlayer.rank">
+  <option value='Member'>Member</option>
+  <option value='Officer'>Officer</option>
+  <option value='Leader'>Leader</option>
+</select>
+<br>
+<label>Role</label>
+<select [(ngModel)]="selectedPlayer.role">
+  <option value='Damage'>Damage</option>
+  <option value='Tank'>Tank</option>
+  <option value='Healer'>Healer</option>
+  <option value='Support'>Support</option>
+</select>
+<br>
+<label>Image URL</label>
+<input [(ngModel)]="selectedPlayer.imageURL">
+<button (click)="updatePlayer(selectedPlayer)">Update</button>
+<br>
+<button (click)="deletePlayer(selectedPlayer)">Delete</button>
