@@ -1,0 +1,17 @@
+{ "players": [{
+    "name": "Jon Kang",
+    "rank": "Officer",
+    "role": "DPS",
+    "imageURL": "../assets/img/generic-headshot.png"
+    }, {
+    "name": "Jon Kang",
+    "rank": "Officer",
+    "role": "DPS",
+    "imageURL": "../assets/img/generic-headshot.png"
+      }, {
+    "name": "Jon Kang",
+    "rank": "Officer",
+    "role": "DPS",
+    "imageURL": "../assets/img/generic-headshot.png"
+  }]
+}

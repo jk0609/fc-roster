@@ -1,28 +1,54 @@
-# FcRoster
+# Free Company Roster (Week 4 Advanced JS Project)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.0.
+#### By Jonathon Kang
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Exercise in Angular and Firebase integration. The app is a roster manager for a clan of players (aka a free company or FC) in the online game Final Fantasy 14. Players can be viewed as a list, added, updated and delete. Players can also be filtered by their team roles to help with setting up specific team compositions for game events.
 
-## Code scaffolding
+## Prerequisites
+* Node.js with NPM
+* Angular 2
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+## Setup/Installation Requirements
+1. Clone the directory to your local machine and navigate to project root directory.
+2. Open your Node.JS terminal and run $ npm install.
+3. Run $ ng serve to initiate the directory and take it live at localhost:4200.
 
-## Build
+## Technologies Used
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+* HTML/CSS
+* Bootstrap
+* Javascript/Node.JS
+* Angular 2
+* Firebase
 
-## Running unit tests
+### License
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Copyright 2017 Jonathon Kang
 
-## Running end-to-end tests
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-## Further help
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Planning
+1. Configuration/dependencies
+  * Node.js/npm
+  * Angular 2
+  * Angular-Bootstrap
+
+2. Layout
+  * Animal model with attributes:
+    1. Name(string)
+    2. Rank(string)
+    3. Role(string)
+    4. Character(string)
+    5. ImageURL(string)
+  * new-player component with form and button with click function that creates a new Player class object and adds it to Firebase table of existing players.
+  * update-player component that contains ngModel relationships with existing player attributes to update them dynamically.
+  * player-list component that lists all current player objects and contains buttons to trigger the update component. List is based off of Firebase table.
+  * Role filter pipes to only display players in specific roles.
+
+3. Future Changes
