@@ -52,3 +52,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   * Role filter pipes to only display players in specific roles.
 
 3. Future Changes
+* Additional styling
+* Team building section of the app to put together team of 8 players.
+* Schedule attribute to dynamically show only players that are available at the designated time.
+* Allow players to have multiple roles.

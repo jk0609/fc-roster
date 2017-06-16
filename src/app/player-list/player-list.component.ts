@@ -14,7 +14,8 @@ export class PlayerListComponent implements OnInit {
 
   players: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
-  
+  roleFilter: string = '';
+
   constructor(
     private router: Router,
     private playerService: PlayerService
@@ -26,5 +27,10 @@ export class PlayerListComponent implements OnInit {
 
   goPlayerDetail(player){
     this.router.navigate(['players', player.$key]);
+  }
+
+  onChange(optionFromMenu) {
+    console.log(optionFromMenu)
+    this.roleFilter = optionFromMenu;
   }
 }

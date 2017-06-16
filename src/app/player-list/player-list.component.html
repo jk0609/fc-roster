@@ -1,6 +1,13 @@
 <h2>All Players</h2>
-
-<div *ngFor="let player of players | async" class="panel panel-default">
+<select (change)="onChange($event.target.value)">
+  <option value="" selected="selected">All Players</option>
+  <option value="Damage">Damage</option>
+  <option value='Tank'>Tank</option>
+  <option value="Healer">Healer</option>
+  <option value="Support">Support</option>
+</select>
+<br>
+<div *ngFor="let player of players | async | roles:roleFilter" class="panel panel-default">
   <div class="panel-body">
     <img src="{{player.imageURL}}" class='logo' alt="">
     <h3 (click)="goPlayerDetail(player)">{{player.name}}</h3>
